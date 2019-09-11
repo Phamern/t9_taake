@@ -1,0 +1,264 @@
+@import url("https://use.typekit.net/hct4vcx.css");
+
+$default-font-family-p: 'josefin-slab', serif;
+$default-titles-font: 'Base-mono-narrow', monospace;
+$side-width: 250px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  //setter noise background filter
+  //background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAFVklEQVR4XpWWB67c2BUFb3g557T/hRo9/WUMZHlgr4Bg8Z4qQgQJlHI4A8SzFVrapvmTF9O7dmYRFZ60YiBhJRCgh1FYhiLAmdvX0CzTOpNE77ME0Zty/nWWzchDtiqrmQDeuv3powQ5ta2eN0FY0InkqDD73lT9c9lEzwUNqgFHs9VQce3TVClFCQrSTfOiYkVJQBmpbq2L6iZavPnAPcoU0dSw0SUTqz/GtrGuXfbyyBniKykOWQWGqwwMA7QiYAxi+IlPdqo+hYHnUt5ZPfnsHJyNiDtnpJyayNBkF6cWoYGAMY92U2hXHF/C1M8uP/ZtYdiuj26UdAdQQSXQErwSOMzt/XWRWAz5GuSBIkwG1H3FabJ2OsUOUhGC6tK4EMtJO0ttC6IBD3kM0ve0tJwMdSfjZo+EEISaeTr9P3wYrGjXqyC1krcKdhMpxEnt5JetoulscpyzhXN5FRpuPHvbeQaKxFAEB6EN+cYN6xD7RYGpXpNndMmZgM5Dcs3YSNFDHUo2LGfZuukSWyUYirJAdYbF3MfqEKmjM+I2EfhA94iG3L7uKrR+GdWD73ydlIB+6hgref1QTlmgmbM3/LeX5GI1Ux1RWpgxpLuZ2+I+IjzZ8wqE4nilvQdkUdfhzI5QDWy+kw5Wgg2pGpeEVeCCA7b85BO3F9DzxB3cdqvBzWcmzbyMiqhzuYqtHRVG2y4x+KOlnyqla8AoWWpuBoYRxzXrfKuILl6SfiWCbjxoZJUaCBj1CjH7GIaDbc9kqBY3W/Rgjda1iqQcOJu2WW+76pZC9QG7M00dffe9hNnseupFL53r8F7YHSwJWUKP2q+k7RdsxyOB11n0xtOvnW4irMMFNV4H0uqwS5ExsmP9AxbDTc9JwgneAT5vTiUSm1E7BSflSt3bfa1tv8Di3R8n3Af7MNWzs49hmauE2wP+ttrq+AsWpFG2awvsuOqbipWHgtuvuaAE+A1Z/7gC9hesnr+7wqCwG8c5yAg3AL1fm8T9AZtp/bbJGwl1pNrE7RuOX7PeMRUERVaPpEs+yqeoSmuOlokqw49pgomjLeh7icHNlG19yjs6XXOMedYm5xH2YxpV2tc0Ro2jJfxC50ApuxGob7lMsxfTbeUv07TyYxpeLucEH1gNd4IKH2LAg5TdVhlCafZvpskfncCfx8pOhJzd76bJWeYFnFciwcYfubRc12Ip/ppIhA1/mSZ/RxjFDrJC5xifFjJpY2Xl5zXdguFqYyTR1zSp1Y9p+tktDYYSNflcxI0iyO4TPBdlRcpeqjK/piF5bklq77VSEaA+z8qmJTFzIWiitbnzR794USKBUaT0NTEsVjZqLaFVqJoPN9ODG70IPbfBHKK+/q/AWR0tJzYHRULOa4MP+W/HfGadZUbfw177G7j/OGbIs8TahLyynl4X4RinF793Oz+BU0saXtUHrVBFT/DnA3ctNPoGbs4hRIjTok8i+algT1lTHi4SxFvONKNrgQFAq2/gFnWMXgwffgYMJpiKYkmW3tTg3ZQ9Jq+f8XN+A5eeUKHWvJWJ2sgJ1Sop+wwhqFVijqWaJhwtD8MNlSBeWNNWTa5Z5kPZw5+LbVT99wqTdx29lMUH4OIG/D86ruKEauBjvH5xy6um/Sfj7ei6UUVk4AIl3MyD4MSSTOFgSwsH/QJWaQ5as7ZcmgBZkzjjU1UrQ74ci1gWBCSGHtuV1H2mhSnO3Wp/3fEV5a+4wz//6qy8JxjZsmxxy5+4w9CDNJY09T072iKG0EnOS0arEYgXqYnXcYHwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);
+  background-color: #0a0a0a;
+  padding: 60px;
+}
+
+.logo {
+  width: 80px;
+  position: fixed;
+}
+
+aside {
+  position: fixed;
+  height: 100vh;
+  width: $side-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  #sideways-nav {
+    li {
+      color: white;
+      padding: 20px;
+      padding-right: 40px;
+      font-family: $default-font-family-p;
+      list-style: none;
+      text-orientation: mixed;
+      writing-mode: vertical-rl;
+      width: 100px;
+        a {
+        color: #fff;
+        text-decoration: none;
+        font-family: $default-font-family-p;
+        font-size: 1rem;
+        border-left: none;
+      }
+    }
+  }  
+  a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s;
+    font-family: $default-font-family-p;
+    font-size: 1.4rem;
+    padding: 10px;
+    padding-left: 40px;
+    border-left: 1px solid #fff;
+  }
+  a:hover{
+    transform: scale(1.3);
+    color: #2d2d2d;
+    border-left: 1px solid #2d2d2d;
+  }
+}
+
+main {
+  margin-left: calc(#{$side-width} + 50px);
+  section {
+    display: flex;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: $default-font-family-p;
+    color: white;
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 1s;
+    }
+  }
+}
+
+
+
+//Oppfører seg som et array
+$heights:(
+  1:100px,
+  2:200px,
+  3:150px,
+  4:200px,
+  5:300px,
+  6:310px,
+  7:260px,
+  8:190px,
+  9:150px,
+  10:240px,
+  11:300px,
+  12:310px
+  );
+
+  //For each variabel i arrayet
+
+  @each $name, $value in $heights {
+    .item#{$name} {
+      min-height: $value;
+    }
+  }
+
+$schizo-heights:(
+  1:200px,
+  2:300px,
+  3:120px,
+  4:150px,
+  5:350px,
+  6:370px,
+  7:280px,
+  8:340px,
+  9:280px,
+  10:150px,
+  11:300px,
+  12:140px
+  );
+
+$schizo-widths:(
+  1:200px,
+  2:300px,
+  3:120px,
+  4:150px,
+  5:350px,
+  6:370px,
+  7:280px,
+  8:340px,
+  9:280px,
+  10:150px,
+  11:300px,
+  12:140px
+  );
+
+$schizo-zindex:(
+  1:2,
+  2:5,
+  3:8,
+  4:1,
+  5:3,
+  6:6,
+  7:7,
+  8:4,
+  9:10,
+  10:9,
+  11:12,
+  12:11
+  );
+
+  //For each variabel i arrayet
+
+  @each $name, $value in $schizo-widths {
+    .schizoSympt .item#{$name} {
+      min-width: $value;
+    }
+  }
+
+  @each $name, $value in $schizo-heights {
+    .schizoSympt .item#{$name} {
+      min-height: $value;
+    }
+  }
+
+  @each $name, $value in $schizo-zindex {
+    .schizoSympt .item#{$name} {
+      z-index: $value;
+    }
+  }
+
+
+  $widths:(
+    1:400px,
+    2:700px,
+    3:550px,
+    4:350px,
+    5:300px,
+    6:310px,
+    7:250px,
+    8:470px,
+    9:690px,
+    10:710px,
+    11:520px,
+    12:280px
+  );
+
+  @each $name, $value in $widths {
+    .item#{$name} {
+      min-width: $value;
+    }
+  }
+
+  $bg-image: (
+    1:url("./img/paranoia.jpg"),
+    2:url("./img/t9_oob.jpg"),
+    3:url("./img/paranoia.jpg"),
+    4:url("./img/test.jpg"),
+    5:url("./img/paranoia.jpg"),
+    6:url("./img/t9_oob.jpg"),
+    7:url("./img/paranoia.jpg"),
+    8:url("./img/t9_oob.jpg"),
+    9:url("./img/paranoia.jpg"),
+    10:url("./img/test.jpg"),
+    11:url("./img/t9_oob.jpg"),
+    12:url("./img/test.jpg"),
+  );
+
+  @each $name, $value in $bg-image {
+    .item#{$name} {
+      background-image: $value;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  $left-margins: (
+    1: -200px,
+    2: -80px,
+    3: -60px,
+    4: -230px,
+    5: -30px,
+    6: -100px,
+    7: -150px,
+    8: -30px,
+    9: -290px,
+    10: -210px,
+    11: -230px,
+    12: -110px,
+  );
+
+  @each $name, $value in $left-margins {
+    .item#{$name} {
+      margin-left: $value;
+    }
+  }
+  $top-margins: (
+    1: -130px,
+    2: -170px,
+    3: 300px,
+    4: -250px,
+    5: -150px,
+    6: 120px,
+    7: 320px,
+    8: 200px,
+    9: 400px,
+    10: -700px,
+    11: -50px,
+    12: -300px
+  );
+
+  @each $name, $value in $top-margins {
+    .item#{$name} {
+      margin-top: $value;
+    }
+  }

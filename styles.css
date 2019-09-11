@@ -1,0 +1,499 @@
+@import url("https://use.typekit.net/hct4vcx.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0a0a0a;
+  padding: 60px;
+}
+
+.logo {
+  width: 80px;
+  position: fixed;
+}
+
+aside {
+  position: fixed;
+  height: 100vh;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+aside #sideways-nav li {
+  color: white;
+  padding: 20px;
+  padding-right: 40px;
+  font-family: "josefin-slab", serif;
+  list-style: none;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  width: 100px;
+}
+aside #sideways-nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "josefin-slab", serif;
+  font-size: 1rem;
+  border-left: none;
+}
+aside a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s;
+  font-family: "josefin-slab", serif;
+  font-size: 1.4rem;
+  padding: 10px;
+  padding-left: 40px;
+  border-left: 1px solid #fff;
+}
+aside a:hover {
+  transform: scale(1.3);
+  color: #2d2d2d;
+  border-left: 1px solid #2d2d2d;
+}
+
+main {
+  margin-left: calc(250px + 50px);
+}
+main section {
+  display: flex;
+  max-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: "josefin-slab", serif;
+  color: white;
+}
+main section .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.item1 {
+  min-height: 100px;
+}
+
+.item2 {
+  min-height: 200px;
+}
+
+.item3 {
+  min-height: 150px;
+}
+
+.item4 {
+  min-height: 200px;
+}
+
+.item5 {
+  min-height: 300px;
+}
+
+.item6 {
+  min-height: 310px;
+}
+
+.item7 {
+  min-height: 260px;
+}
+
+.item8 {
+  min-height: 190px;
+}
+
+.item9 {
+  min-height: 150px;
+}
+
+.item10 {
+  min-height: 240px;
+}
+
+.item11 {
+  min-height: 300px;
+}
+
+.item12 {
+  min-height: 310px;
+}
+
+.schizoSympt .item1 {
+  min-width: 200px;
+}
+
+.schizoSympt .item2 {
+  min-width: 300px;
+}
+
+.schizoSympt .item3 {
+  min-width: 120px;
+}
+
+.schizoSympt .item4 {
+  min-width: 150px;
+}
+
+.schizoSympt .item5 {
+  min-width: 350px;
+}
+
+.schizoSympt .item6 {
+  min-width: 370px;
+}
+
+.schizoSympt .item7 {
+  min-width: 280px;
+}
+
+.schizoSympt .item8 {
+  min-width: 340px;
+}
+
+.schizoSympt .item9 {
+  min-width: 280px;
+}
+
+.schizoSympt .item10 {
+  min-width: 150px;
+}
+
+.schizoSympt .item11 {
+  min-width: 300px;
+}
+
+.schizoSympt .item12 {
+  min-width: 140px;
+}
+
+.schizoSympt .item1 {
+  min-height: 200px;
+}
+
+.schizoSympt .item2 {
+  min-height: 300px;
+}
+
+.schizoSympt .item3 {
+  min-height: 120px;
+}
+
+.schizoSympt .item4 {
+  min-height: 150px;
+}
+
+.schizoSympt .item5 {
+  min-height: 350px;
+}
+
+.schizoSympt .item6 {
+  min-height: 370px;
+}
+
+.schizoSympt .item7 {
+  min-height: 280px;
+}
+
+.schizoSympt .item8 {
+  min-height: 340px;
+}
+
+.schizoSympt .item9 {
+  min-height: 280px;
+}
+
+.schizoSympt .item10 {
+  min-height: 150px;
+}
+
+.schizoSympt .item11 {
+  min-height: 300px;
+}
+
+.schizoSympt .item12 {
+  min-height: 140px;
+}
+
+.schizoSympt .item1 {
+  z-index: 2;
+}
+
+.schizoSympt .item2 {
+  z-index: 5;
+}
+
+.schizoSympt .item3 {
+  z-index: 8;
+}
+
+.schizoSympt .item4 {
+  z-index: 1;
+}
+
+.schizoSympt .item5 {
+  z-index: 3;
+}
+
+.schizoSympt .item6 {
+  z-index: 6;
+}
+
+.schizoSympt .item7 {
+  z-index: 7;
+}
+
+.schizoSympt .item8 {
+  z-index: 4;
+}
+
+.schizoSympt .item9 {
+  z-index: 10;
+}
+
+.schizoSympt .item10 {
+  z-index: 9;
+}
+
+.schizoSympt .item11 {
+  z-index: 12;
+}
+
+.schizoSympt .item12 {
+  z-index: 11;
+}
+
+.item1 {
+  min-width: 400px;
+}
+
+.item2 {
+  min-width: 700px;
+}
+
+.item3 {
+  min-width: 550px;
+}
+
+.item4 {
+  min-width: 350px;
+}
+
+.item5 {
+  min-width: 300px;
+}
+
+.item6 {
+  min-width: 310px;
+}
+
+.item7 {
+  min-width: 250px;
+}
+
+.item8 {
+  min-width: 470px;
+}
+
+.item9 {
+  min-width: 690px;
+}
+
+.item10 {
+  min-width: 710px;
+}
+
+.item11 {
+  min-width: 520px;
+}
+
+.item12 {
+  min-width: 280px;
+}
+
+.item1 {
+  background-image: url("./img/paranoia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item2 {
+  background-image: url("./img/t9_oob.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item3 {
+  background-image: url("./img/paranoia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item4 {
+  background-image: url("./img/test.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item5 {
+  background-image: url("./img/paranoia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item6 {
+  background-image: url("./img/t9_oob.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item7 {
+  background-image: url("./img/paranoia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item8 {
+  background-image: url("./img/t9_oob.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item9 {
+  background-image: url("./img/paranoia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item10 {
+  background-image: url("./img/test.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item11 {
+  background-image: url("./img/t9_oob.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item12 {
+  background-image: url("./img/test.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item1 {
+  margin-left: -200px;
+}
+
+.item2 {
+  margin-left: -80px;
+}
+
+.item3 {
+  margin-left: -60px;
+}
+
+.item4 {
+  margin-left: -230px;
+}
+
+.item5 {
+  margin-left: -30px;
+}
+
+.item6 {
+  margin-left: -100px;
+}
+
+.item7 {
+  margin-left: -150px;
+}
+
+.item8 {
+  margin-left: -30px;
+}
+
+.item9 {
+  margin-left: -290px;
+}
+
+.item10 {
+  margin-left: -210px;
+}
+
+.item11 {
+  margin-left: -230px;
+}
+
+.item12 {
+  margin-left: -110px;
+}
+
+.item1 {
+  margin-top: -130px;
+}
+
+.item2 {
+  margin-top: -170px;
+}
+
+.item3 {
+  margin-top: 300px;
+}
+
+.item4 {
+  margin-top: -250px;
+}
+
+.item5 {
+  margin-top: -150px;
+}
+
+.item6 {
+  margin-top: 120px;
+}
+
+.item7 {
+  margin-top: 320px;
+}
+
+.item8 {
+  margin-top: 200px;
+}
+
+.item9 {
+  margin-top: 400px;
+}
+
+.item10 {
+  margin-top: -700px;
+}
+
+.item11 {
+  margin-top: -50px;
+}
+
+.item12 {
+  margin-top: -300px;
+}
+
+/*# sourceMappingURL=styles.css.map */
