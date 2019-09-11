@@ -331,14 +331,14 @@ main section .item {
 }
 
 .item3 {
-  background-image: url("./img/paranoia.jpg");
+  background-image: url("./img/senses.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item4 {
-  background-image: url("./img/test.jpg");
+  background-image: url("./img/senses.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -359,7 +359,7 @@ main section .item {
 }
 
 .item7 {
-  background-image: url("./img/paranoia.jpg");
+  background-image: url("./img/senses.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

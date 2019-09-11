@@ -67,16 +67,19 @@ footer {
   }
 }
 
+
 @media screen and (max-width: 600px) {
-  #symptoms {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 380px 380px 380px 380px 380px;
-    grid-gap: 30px;
-    align-items: center;
-    img {
-      width: 380px;
-      padding: 50px;
+  body {
+    overflow: auto;
+  }
+    main {
+    #symptoms {
+      grid-template-columns: none;
+      grid-template-rows: 300px;
+      img {
+        width: 50px;
+        //padding: 50px;
+      }
     }
   }
 }

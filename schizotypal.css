@@ -61,16 +61,16 @@ footer #backbutton {
 }
 
 @media screen and (max-width: 600px) {
-  #symptoms {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 380px 380px 380px 380px 380px;
-    grid-gap: 30px;
-    align-items: center;
+  body {
+    overflow: auto;
   }
-  #symptoms img {
-    width: 380px;
-    padding: 50px;
+
+  main #symptoms {
+    grid-template-columns: none;
+    grid-template-rows: 300px;
+  }
+  main #symptoms img {
+    width: 50px;
   }
 }
 .sympt1 {
