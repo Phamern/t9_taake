@@ -44,10 +44,6 @@ main #symptoms .sympt {
   align-items: center;
   font-family: "josefin-slab", monospace;
 }
-main #symptoms .sympt:hover {
-  margin-top: 50px;
-  transform: scale(1.1);
-}
 
 footer {
   position: absolute;
@@ -60,6 +56,12 @@ footer #backbutton {
   text-decoration: none;
 }
 
+@media all and (min-width: 900px) {
+  .sympt:hover {
+    margin-top: 50px;
+    transform: scale(1.1);
+  }
+}
 @media screen and (max-width: 600px) {
   body {
     overflow: auto;
@@ -86,10 +88,6 @@ footer #backbutton {
   main #symptoms .sympt {
     transition: none;
     margin-top: 0;
-  }
-  main .sympt:hover {
-    margin-top: 0px;
-    transform: none;
   }
 
   .sympt1 {
@@ -194,14 +192,14 @@ footer #backbutton {
 }
 
 .sympt4 {
-  background-image: url("../img/t9_oob.jpg");
+  background-image: url("../img/selfharm.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .sympt5 {
-  background-image: url("../img/paranoia.jpg");
+  background-image: url("../img/erotica.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

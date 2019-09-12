@@ -48,10 +48,7 @@ main {
       align-items: center;
       font-family: $default-h1-font-family;
     }
-      .sympt:hover {
-        margin-top: 50px;
-        transform: scale(1.1);
-      }
+      
     }
   }
 
@@ -66,6 +63,12 @@ footer {
   }
 }
 
+@media all and (min-width: 900px) {
+  .sympt:hover {
+    margin-top: 50px;
+    transform: scale(1.1);
+  }
+}
 
 @media screen and (max-width: 600px) {
   body {
@@ -93,10 +96,7 @@ footer {
         margin-top: 0;
       }
     }
-    .sympt:hover {
-      margin-top: 0px;
-      transform: none;
-    }
+    
   }
 
 $top-margin: (
@@ -158,8 +158,8 @@ $bg-image: (
   1:url("../img/paranoia.jpg"),
   2:url("../img/t9_oob.jpg"),
   3:url("../img/senses.jpg"),
-  4:url("../img/t9_oob.jpg"),
-  5:url("../img/paranoia.jpg"),
+  4:url("../img/selfharm.jpg"),
+  5:url("../img/erotica.jpg"),
 );
 
 @each $name, $value in $bg-image {
