@@ -1,0 +1,172 @@
+@import url("https://use.typekit.net/hct4vcx.css");
+
+$default-h1-font-family: 'josefin-slab', monospace;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0a0a0a;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-left: 60px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .logo {
+  width: 80px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    font-family: $default-h1-font-family;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+}
+
+main {
+  #symptoms {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(5, 480px);
+    grid-gap: 120px;
+    align-items: center;
+    overflow: auto;
+    .sympt {
+      display: grid;
+      transition: 1.5s;
+      text-decoration: none;
+      justify-content: center;
+      color: white;
+      align-items: center;
+      font-family: $default-h1-font-family;
+    }
+      .sympt:hover {
+        margin-top: 50px;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+footer {
+  position: absolute;
+  top: 90vh;
+  #backbutton {
+    font-size: 1rem;
+    color: white;
+    font-family: $default-h1-font-family;
+    text-decoration: none;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow: auto;
+    padding: 0;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 30px;
+    .logo {
+    width: 50px;
+    text-align: center;
+    }
+  }
+    main {
+    #symptoms {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 0;
+      justify-content: center;
+      .sympt {
+        transition: none;
+        margin-top: 0;
+      }
+    }
+    .sympt:hover {
+      margin-top: 0px;
+      transform: none;
+    }
+  }
+
+$top-margin: (
+  1: 0,
+  2: 0,
+  3: 0,
+  4: 0,
+  5: 0
+);
+
+@each $name, $value in $top-margin {
+  .sympt#{$name} {
+    margin-top: $value;
+  }
+}
+}
+
+$top-margin: (
+  1: -300px,
+  2: -50px,
+  3: -200px,
+  4: -120px,
+  5: -80px
+);
+
+@each $name, $value in $top-margin {
+  .sympt#{$name} {
+    margin-top: $value;
+  }
+}
+$widths: (
+  1: 100%,
+  2: 100%,
+  3: 100%,
+  4: 100%,
+  5: 100%
+);
+
+@each $name, $value in $widths {
+  .sympt#{$name} {
+    width: $value;
+  }
+}
+$heights: (
+  1: 280px,
+  2: 280px,
+  3: 280px,
+  4: 280px,
+  5: 280px
+);
+
+@each $name, $value in $heights {
+  .sympt#{$name} {
+    height: $value;
+  }
+}
+
+$bg-image: (
+  1:url("../img/paranoia.jpg"),
+  2:url("../img/t9_oob.jpg"),
+  3:url("../img/senses.jpg"),
+  4:url("../img/t9_oob.jpg"),
+  5:url("../img/paranoia.jpg"),
+);
+
+@each $name, $value in $bg-image {
+  .sympt#{$name} {
+    background-image: $value;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

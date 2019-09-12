@@ -7,7 +7,8 @@
 
 body {
   background-color: #0a0a0a;
-  padding: 60px;
+  padding-left: 60px;
+  padding-top: 60px;
 }
 
 .logo {
@@ -40,7 +41,7 @@ aside #sideways-nav li a {
   font-size: 1rem;
   border-left: none;
 }
-aside a {
+aside nav a {
   display: block;
   color: #fff;
   text-decoration: none;
@@ -73,7 +74,12 @@ main section .item {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1s;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+main section .item:hover {
+  transform: scale(1.1);
+  z-index: 10;
 }
 
 .item1 {
@@ -317,91 +323,91 @@ main section .item {
 }
 
 .item1 {
-  background-image: url("./img/paranoia.jpg");
+  background-image: url("../img/paranoia.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item2 {
-  background-image: url("./img/t9_oob.jpg");
+  background-image: url("../img/t9_oob.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item3 {
-  background-image: url("./img/senses.jpg");
+  background-image: url("../img/senses.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item4 {
-  background-image: url("./img/senses.jpg");
+  background-image: url("../img/senses.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item5 {
-  background-image: url("./img/paranoia.jpg");
+  background-image: url("../img/paranoia.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item6 {
-  background-image: url("./img/t9_oob.jpg");
+  background-image: url("../img/t9_oob.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item7 {
-  background-image: url("./img/senses.jpg");
+  background-image: url("../img/senses.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item8 {
-  background-image: url("./img/t9_oob.jpg");
+  background-image: url("../img/t9_oob.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item9 {
-  background-image: url("./img/paranoia.jpg");
+  background-image: url("../img/paranoia.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item10 {
-  background-image: url("./img/test.jpg");
+  background-image: url("../img/test.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item11 {
-  background-image: url("./img/t9_oob.jpg");
+  background-image: url("../img/t9_oob.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item12 {
-  background-image: url("./img/test.jpg");
+  background-image: url("../img/test.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item1 {
-  margin-left: -200px;
+  margin-left: 0px;
 }
 
 .item2 {
@@ -494,6 +500,63 @@ main section .item {
 
 .item12 {
   margin-top: -300px;
+}
+
+@media screen and (max-width: 900px) {
+  .symptoms {
+    flex-wrap: wrap;
+  }
+  .symptoms .item {
+    margin: auto;
+  }
+
+  .item1 {
+    min-width: calc(400px/2);
+  }
+
+  .item2 {
+    min-width: calc(700px/2);
+  }
+
+  .item3 {
+    min-width: calc(550px/2);
+  }
+
+  .item4 {
+    min-width: calc(350px/2);
+  }
+
+  .item5 {
+    min-width: calc(300px/2);
+  }
+
+  .item6 {
+    min-width: calc(310px/2);
+  }
+
+  .item7 {
+    min-width: calc(250px/2);
+  }
+
+  .item8 {
+    min-width: calc(470px/2);
+  }
+
+  .item9 {
+    min-width: calc(690px/2);
+  }
+
+  .item10 {
+    min-width: calc(710px/2);
+  }
+
+  .item11 {
+    min-width: calc(520px/2);
+  }
+
+  .item12 {
+    min-width: calc(280px/2);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
