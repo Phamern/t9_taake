@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0a0a0a;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  overflow-y: hidden;
+}
+main img {
+  width: 80vw;
+}
+
+/*# sourceMappingURL=eccentric.css.map */

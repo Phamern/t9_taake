@@ -17,7 +17,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
 }
 header .logo {
-  width: 80px;
+  height: 30px;
 }
 header h1 {
   text-align: center;
@@ -58,8 +58,8 @@ footer #backbutton {
 
 @media all and (min-width: 900px) {
   .sympt:hover {
-    margin-top: 50px;
-    transform: scale(1.1);
+    margin-top: -100px;
+    transform: scale(1.03);
   }
 }
 @media screen and (max-width: 600px) {
@@ -177,11 +177,19 @@ footer #backbutton {
   background-position: center;
 }
 
+.sympt1:hover {
+  background-size: 105%;
+}
+
 .sympt2 {
   background-image: url("../img/t9_oob.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.sympt2:hover {
+  background-size: 105%;
 }
 
 .sympt3 {
@@ -191,6 +199,10 @@ footer #backbutton {
   background-position: center;
 }
 
+.sympt3:hover {
+  background-size: 105%;
+}
+
 .sympt4 {
   background-image: url("../img/selfharm.jpg");
   background-size: cover;
@@ -198,11 +210,19 @@ footer #backbutton {
   background-position: center;
 }
 
+.sympt4:hover {
+  background-size: 105%;
+}
+
 .sympt5 {
   background-image: url("../img/erotica.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.sympt5:hover {
+  background-size: 105%;
 }
 
 /*# sourceMappingURL=schizotypal.css.map */

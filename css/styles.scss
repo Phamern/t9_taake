@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-  width: 80px;
+  height: 30px;
   position: fixed;
 }
 
@@ -119,72 +119,6 @@ $heights:(
     }
   }
 
-$schizo-heights:(
-  1:200px,
-  2:300px,
-  3:120px,
-  4:150px,
-  5:350px,
-  6:370px,
-  7:280px,
-  8:340px,
-  9:280px,
-  10:150px,
-  11:300px,
-  12:140px
-  );
-
-$schizo-widths:(
-  1:200px,
-  2:300px,
-  3:120px,
-  4:150px,
-  5:350px,
-  6:370px,
-  7:280px,
-  8:340px,
-  9:280px,
-  10:150px,
-  11:300px,
-  12:140px
-  );
-
-$schizo-zindex:(
-  1:2,
-  2:5,
-  3:8,
-  4:1,
-  5:3,
-  6:6,
-  7:7,
-  8:4,
-  9:10,
-  10:9,
-  11:12,
-  12:11
-  );
-
-  //For each variabel i arrayet
-
-  @each $name, $value in $schizo-widths {
-    .schizoSympt .item#{$name} {
-      min-width: $value;
-    }
-  }
-
-  @each $name, $value in $schizo-heights {
-    .schizoSympt .item#{$name} {
-      min-height: $value;
-    }
-  }
-
-  @each $name, $value in $schizo-zindex {
-    .schizoSympt .item#{$name} {
-      z-index: $value;
-    }
-  }
-
-
   $widths:(
     1:400px,
     2:700px,
@@ -210,13 +144,13 @@ $schizo-zindex:(
     1:url("../img/paranoia.jpg"),
     2:url("../img/t9_oob.jpg"),
     3:url("../img/senses.jpg"),
-    4:url("../img/senses.jpg"),
-    5:url("../img/paranoia.jpg"),
+    4:url("../img/erotica.jpg"),
+    5:url("../img/selfharm.jpg"),
     6:url("../img/t9_oob.jpg"),
     7:url("../img/senses.jpg"),
-    8:url("../img/t9_oob.jpg"),
+    8:url("../img/erotica.jpg"),
     9:url("../img/paranoia.jpg"),
-    10:url("../img/test.jpg"),
+    10:url("../img/selfharm.jpg"),
     11:url("../img/t9_oob.jpg"),
     12:url("../img/test.jpg"),
   );
@@ -232,13 +166,13 @@ $schizo-zindex:(
 
   $left-margins: (
     1: 0px,
-    2: -80px,
-    3: -60px,
+    2: 500px,
+    3: -160px,
     4: -230px,
     5: -30px,
     6: -100px,
     7: -150px,
-    8: -30px,
+    8: -130px,
     9: -290px,
     10: -210px,
     11: -230px,
@@ -258,7 +192,7 @@ $schizo-zindex:(
     5: -150px,
     6: 120px,
     7: 320px,
-    8: 200px,
+    8: -200px,
     9: 400px,
     10: -700px,
     11: -50px,
@@ -271,12 +205,78 @@ $schizo-zindex:(
     }
   }
 
+  $schizo-heights:(
+  1:200px,
+  2:300px,
+  3:120px,
+  4:150px,
+  5:350px,
+  6:370px,
+  7:280px,
+  8:340px,
+  9:280px,
+  10:150px,
+  11:300px,
+  12:140px
+  );
+
+  @each $name, $value in $schizo-heights {
+    .schizoSympt .item#{$name} {
+      min-height: $value;
+    }
+  }
+
+$schizo-widths:(
+  1:200px,
+  2:300px,
+  3:120px,
+  4:150px,
+  5:350px,
+  6:370px,
+  7:280px,
+  8:340px,
+  9:280px,
+  10:150px,
+  11:300px,
+  12:140px
+  );
+
+  @each $name, $value in $schizo-widths {
+    .schizoSympt .item#{$name} {
+      min-width: $value;
+    }
+  }
+
+$schizo-zindex:(
+  1:2,
+  2:5,
+  3:8,
+  4:1,
+  5:3,
+  6:6,
+  7:7,
+  8:4,
+  9:10,
+  10:9,
+  11:12,
+  12:11
+  );
+
+  @each $name, $value in $schizo-zindex {
+    .schizoSympt .item#{$name} {
+      z-index: $value;
+    }
+  }
+
   @media screen and(max-width: 900px) {
     .symptoms {
       flex-wrap: wrap;
       .item {
         margin: auto;
       }
+    }
+    #sideways-nav {
+      display: none;
     }
     @each $name, $value in $widths {
       .item#{$name} {

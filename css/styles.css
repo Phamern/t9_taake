@@ -12,7 +12,7 @@ body {
 }
 
 .logo {
-  width: 80px;
+  height: 30px;
   position: fixed;
 }
 
@@ -130,150 +130,6 @@ main section .item:hover {
   min-height: 310px;
 }
 
-.schizoSympt .item1 {
-  min-width: 200px;
-}
-
-.schizoSympt .item2 {
-  min-width: 300px;
-}
-
-.schizoSympt .item3 {
-  min-width: 120px;
-}
-
-.schizoSympt .item4 {
-  min-width: 150px;
-}
-
-.schizoSympt .item5 {
-  min-width: 350px;
-}
-
-.schizoSympt .item6 {
-  min-width: 370px;
-}
-
-.schizoSympt .item7 {
-  min-width: 280px;
-}
-
-.schizoSympt .item8 {
-  min-width: 340px;
-}
-
-.schizoSympt .item9 {
-  min-width: 280px;
-}
-
-.schizoSympt .item10 {
-  min-width: 150px;
-}
-
-.schizoSympt .item11 {
-  min-width: 300px;
-}
-
-.schizoSympt .item12 {
-  min-width: 140px;
-}
-
-.schizoSympt .item1 {
-  min-height: 200px;
-}
-
-.schizoSympt .item2 {
-  min-height: 300px;
-}
-
-.schizoSympt .item3 {
-  min-height: 120px;
-}
-
-.schizoSympt .item4 {
-  min-height: 150px;
-}
-
-.schizoSympt .item5 {
-  min-height: 350px;
-}
-
-.schizoSympt .item6 {
-  min-height: 370px;
-}
-
-.schizoSympt .item7 {
-  min-height: 280px;
-}
-
-.schizoSympt .item8 {
-  min-height: 340px;
-}
-
-.schizoSympt .item9 {
-  min-height: 280px;
-}
-
-.schizoSympt .item10 {
-  min-height: 150px;
-}
-
-.schizoSympt .item11 {
-  min-height: 300px;
-}
-
-.schizoSympt .item12 {
-  min-height: 140px;
-}
-
-.schizoSympt .item1 {
-  z-index: 2;
-}
-
-.schizoSympt .item2 {
-  z-index: 5;
-}
-
-.schizoSympt .item3 {
-  z-index: 8;
-}
-
-.schizoSympt .item4 {
-  z-index: 1;
-}
-
-.schizoSympt .item5 {
-  z-index: 3;
-}
-
-.schizoSympt .item6 {
-  z-index: 6;
-}
-
-.schizoSympt .item7 {
-  z-index: 7;
-}
-
-.schizoSympt .item8 {
-  z-index: 4;
-}
-
-.schizoSympt .item9 {
-  z-index: 10;
-}
-
-.schizoSympt .item10 {
-  z-index: 9;
-}
-
-.schizoSympt .item11 {
-  z-index: 12;
-}
-
-.schizoSympt .item12 {
-  z-index: 11;
-}
-
 .item1 {
   min-width: 400px;
 }
@@ -344,14 +200,14 @@ main section .item:hover {
 }
 
 .item4 {
-  background-image: url("../img/senses.jpg");
+  background-image: url("../img/erotica.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item5 {
-  background-image: url("../img/paranoia.jpg");
+  background-image: url("../img/selfharm.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -372,7 +228,7 @@ main section .item:hover {
 }
 
 .item8 {
-  background-image: url("../img/t9_oob.jpg");
+  background-image: url("../img/erotica.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -386,7 +242,7 @@ main section .item:hover {
 }
 
 .item10 {
-  background-image: url("../img/test.jpg");
+  background-image: url("../img/selfharm.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -411,11 +267,11 @@ main section .item:hover {
 }
 
 .item2 {
-  margin-left: -80px;
+  margin-left: 500px;
 }
 
 .item3 {
-  margin-left: -60px;
+  margin-left: -160px;
 }
 
 .item4 {
@@ -435,7 +291,7 @@ main section .item:hover {
 }
 
 .item8 {
-  margin-left: -30px;
+  margin-left: -130px;
 }
 
 .item9 {
@@ -483,7 +339,7 @@ main section .item:hover {
 }
 
 .item8 {
-  margin-top: 200px;
+  margin-top: -200px;
 }
 
 .item9 {
@@ -502,12 +358,160 @@ main section .item:hover {
   margin-top: -300px;
 }
 
+.schizoSympt .item1 {
+  min-height: 200px;
+}
+
+.schizoSympt .item2 {
+  min-height: 300px;
+}
+
+.schizoSympt .item3 {
+  min-height: 120px;
+}
+
+.schizoSympt .item4 {
+  min-height: 150px;
+}
+
+.schizoSympt .item5 {
+  min-height: 350px;
+}
+
+.schizoSympt .item6 {
+  min-height: 370px;
+}
+
+.schizoSympt .item7 {
+  min-height: 280px;
+}
+
+.schizoSympt .item8 {
+  min-height: 340px;
+}
+
+.schizoSympt .item9 {
+  min-height: 280px;
+}
+
+.schizoSympt .item10 {
+  min-height: 150px;
+}
+
+.schizoSympt .item11 {
+  min-height: 300px;
+}
+
+.schizoSympt .item12 {
+  min-height: 140px;
+}
+
+.schizoSympt .item1 {
+  min-width: 200px;
+}
+
+.schizoSympt .item2 {
+  min-width: 300px;
+}
+
+.schizoSympt .item3 {
+  min-width: 120px;
+}
+
+.schizoSympt .item4 {
+  min-width: 150px;
+}
+
+.schizoSympt .item5 {
+  min-width: 350px;
+}
+
+.schizoSympt .item6 {
+  min-width: 370px;
+}
+
+.schizoSympt .item7 {
+  min-width: 280px;
+}
+
+.schizoSympt .item8 {
+  min-width: 340px;
+}
+
+.schizoSympt .item9 {
+  min-width: 280px;
+}
+
+.schizoSympt .item10 {
+  min-width: 150px;
+}
+
+.schizoSympt .item11 {
+  min-width: 300px;
+}
+
+.schizoSympt .item12 {
+  min-width: 140px;
+}
+
+.schizoSympt .item1 {
+  z-index: 2;
+}
+
+.schizoSympt .item2 {
+  z-index: 5;
+}
+
+.schizoSympt .item3 {
+  z-index: 8;
+}
+
+.schizoSympt .item4 {
+  z-index: 1;
+}
+
+.schizoSympt .item5 {
+  z-index: 3;
+}
+
+.schizoSympt .item6 {
+  z-index: 6;
+}
+
+.schizoSympt .item7 {
+  z-index: 7;
+}
+
+.schizoSympt .item8 {
+  z-index: 4;
+}
+
+.schizoSympt .item9 {
+  z-index: 10;
+}
+
+.schizoSympt .item10 {
+  z-index: 9;
+}
+
+.schizoSympt .item11 {
+  z-index: 12;
+}
+
+.schizoSympt .item12 {
+  z-index: 11;
+}
+
 @media screen and (max-width: 900px) {
   .symptoms {
     flex-wrap: wrap;
   }
   .symptoms .item {
     margin: auto;
+  }
+
+  #sideways-nav {
+    display: none;
   }
 
   .item1 {

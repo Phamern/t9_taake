@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/hct4vcx.css");
 
-$default-h1-font-family: 'josefin-slab', monospace;
+$default-h1-font-family: "josefin-slab", monospace;
 
 * {
   box-sizing: border-box;
@@ -19,7 +19,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   .logo {
-  width: 80px;
+    height: 30px;
   }
 
   h1 {
@@ -48,9 +48,8 @@ main {
       align-items: center;
       font-family: $default-h1-font-family;
     }
-      
-    }
   }
+}
 
 footer {
   position: absolute;
@@ -65,8 +64,8 @@ footer {
 
 @media all and (min-width: 900px) {
   .sympt:hover {
-    margin-top: 50px;
-    transform: scale(1.1);
+    margin-top: -100px;
+    transform: scale(1.03);
   }
 }
 
@@ -81,11 +80,11 @@ footer {
     justify-content: center;
     padding: 30px;
     .logo {
-    width: 50px;
-    text-align: center;
+      width: 50px;
+      text-align: center;
     }
   }
-    main {
+  main {
     #symptoms {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
@@ -96,22 +95,21 @@ footer {
         margin-top: 0;
       }
     }
-    
   }
 
-$top-margin: (
-  1: 0,
-  2: 0,
-  3: 0,
-  4: 0,
-  5: 0
-);
+  $top-margin: (
+    1: 0,
+    2: 0,
+    3: 0,
+    4: 0,
+    5: 0
+  );
 
-@each $name, $value in $top-margin {
-  .sympt#{$name} {
-    margin-top: $value;
+  @each $name, $value in $top-margin {
+    .sympt#{$name} {
+      margin-top: $value;
+    }
   }
-}
 }
 
 $top-margin: (
@@ -127,6 +125,7 @@ $top-margin: (
     margin-top: $value;
   }
 }
+
 $widths: (
   1: 100%,
   2: 100%,
@@ -155,11 +154,11 @@ $heights: (
 }
 
 $bg-image: (
-  1:url("../img/paranoia.jpg"),
-  2:url("../img/t9_oob.jpg"),
-  3:url("../img/senses.jpg"),
-  4:url("../img/selfharm.jpg"),
-  5:url("../img/erotica.jpg"),
+  1: url("../img/paranoia.jpg"),
+  2: url("../img/t9_oob.jpg"),
+  3: url("../img/senses.jpg"),
+  4: url("../img/selfharm.jpg"),
+  5: url("../img/erotica.jpg")
 );
 
 @each $name, $value in $bg-image {
@@ -169,4 +168,8 @@ $bg-image: (
     background-repeat: no-repeat;
     background-position: center;
   }
+  .sympt#{$name}:hover {
+    background-size: percentage($number: 1.05);
+  }
 }
+
