@@ -1,5 +1,4 @@
 @import url("https://use.typekit.net/hct4vcx.css");
-@import url("./eccentricSecond.css");
 
 $default-h1: "Josefin-sans", sans-serif;
 $default-p: "Josefin-slab", monospace;
@@ -15,6 +14,8 @@ body {
 }
 
 main {
+  display: grid;
+  grid-template-rows: repeat(6, 100vh);
   section {
     display: grid;
     height: 100vh;
@@ -22,8 +23,21 @@ main {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 1fr);
     margin-bottom: 100px;
+    grid-gap: 30px;
   }
   #section-1 {
+    a {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      z-index: 5;
+      padding-left: 30px;
+      padding-top: 30px;
+      text-decoration: none;
+      color:white;
+      img {
+        width: 30px;
+      }
+    }
     .image {
       grid-column: 1/7;
       grid-row: 1/7;
@@ -58,13 +72,13 @@ main {
       }
     }
     .intro-text {
-      grid-column: 6/9;
+      grid-column: 7/9;
       grid-row: 5/6;
       p {
         color: white;
         width: 100%;
         font-family: $default-p;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
     }
   }
@@ -120,7 +134,6 @@ main {
         grid-row: 5/6;
         p {
           color: white;
-          width: 60%;
           font-family: $default-p;
           font-size: 1rem;
           text-shadow: 1px 1px 2px #0a0a0a;

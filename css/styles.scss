@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/hct4vcx.css");
 
-$default-font-family-p: 'josefin-slab', serif;
-$default-titles-font: 'Base-mono-narrow', monospace;
+$default-font-family-p: "josefin-slab", serif;
+$default-titles-font: "Base-mono-narrow", monospace;
 $side-width: 250px;
 
 * {
@@ -38,16 +38,15 @@ aside {
       text-orientation: mixed;
       writing-mode: vertical-rl;
       width: 100px;
-        a {
+      a {
         color: #fff;
         text-decoration: none;
         font-family: $default-font-family-p;
         font-size: 1rem;
         border-left: none;
-        
       }
     }
-  }  
+  }
   nav a {
     display: block;
     color: #fff;
@@ -58,9 +57,8 @@ aside {
     padding: 10px;
     padding-left: 40px;
     border-left: 1px solid #fff;
-    
   }
-  a:hover{
+  a:hover {
     transform: scale(1.3);
     color: #2d2d2d;
     border-left: 1px solid #2d2d2d;
@@ -81,9 +79,8 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: 1s ease-in-out ;
-      box-shadow: 10px 10px 8px 10px #888888;
-      cursor: pointer
+      transition: 1s ease-in-out;
+      cursor: pointer;
     }
     .item:hover {
       transform: scale(1.1);
@@ -92,195 +89,193 @@ main {
   }
 }
 
-
-
 //Oppfører seg som et array
-$heights:(
-  1:100px,
-  2:200px,
-  3:150px,
-  4:200px,
-  5:300px,
-  6:310px,
-  7:260px,
-  8:190px,
-  9:150px,
-  10:240px,
-  11:300px,
-  12:310px
-  );
+$heights: (
+  1: 100px,
+  2: 200px,
+  3: 150px,
+  4: 200px,
+  5: 300px,
+  6: 310px,
+  7: 260px,
+  8: 190px,
+  9: 250px,
+  10: 240px,
+  11: 300px,
+  12: 310px
+);
 
-  //For each variabel i arrayet
+//For each variabel i arrayet
 
-  @each $name, $value in $heights {
-    .item#{$name} {
-      min-height: $value;
+@each $name, $value in $heights {
+  .item#{$name} {
+    min-height: $value;
+  }
+}
+
+$widths: (
+  1: 400px,
+  2: 700px,
+  3: 350px,
+  4: 350px,
+  5: 300px,
+  6: 310px,
+  7: 250px,
+  8: 470px,
+  9: 390px,
+  10: 710px,
+  11: 520px,
+  12: 280px
+);
+
+@each $name, $value in $widths {
+  .item#{$name} {
+    min-width: $value;
+  }
+}
+
+$bg-image: (
+  1: url("../img/paranoia.jpg"),
+  2: url("../img/t9_oob.jpg"),
+  3: url("../img/senses.jpg"),
+  4: url("../img/erotica.jpg"),
+  5: url("../img/selfharm.jpg"),
+  6: url("../img/t9_oob.jpg"),
+  7: url("../img/senses.jpg"),
+  8: url("../img/erotica.jpg"),
+  9: url("../img/paranoia.jpg"),
+  10: url("../img/selfharm.jpg"),
+  11: url("../img/t9_oob.jpg"),
+  12: url("../img/test.jpg")
+);
+
+@each $name, $value in $bg-image {
+  .item#{$name} {
+    background-image: $value;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+$left-margins: (
+  1: 0px,
+  2: -200px,
+  3: -160px,
+  4: -130px,
+  5: -30px,
+  6: -100px,
+  7: -150px,
+  8: -130px,
+  9: -790px,
+  10: -210px,
+  11: -230px,
+  12: -110px
+);
+
+@each $name, $value in $left-margins {
+  .item#{$name} {
+    margin-left: $value;
+  }
+}
+$top-margins: (
+  1: -130px,
+  2: -170px,
+  3: 300px,
+  4: -150px,
+  5: -150px,
+  6: 120px,
+  7: 320px,
+  8: -200px,
+  9: 400px,
+  10: -700px,
+  11: -50px,
+  12: -300px
+);
+
+@each $name, $value in $top-margins {
+  .item#{$name} {
+    margin-top: $value;
+  }
+}
+
+$schizo-heights: (
+  1: 200px,
+  2: 300px,
+  3: 120px,
+  4: 150px,
+  5: 350px,
+  6: 370px,
+  7: 280px,
+  8: 340px,
+  9: 280px,
+  10: 150px,
+  11: 300px,
+  12: 140px
+);
+
+@each $name, $value in $schizo-heights {
+  .schizoSympt .item#{$name} {
+    min-height: $value;
+  }
+}
+
+$schizo-widths: (
+  1: 200px,
+  2: 300px,
+  3: 120px,
+  4: 150px,
+  5: 350px,
+  6: 370px,
+  7: 280px,
+  8: 340px,
+  9: 280px,
+  10: 150px,
+  11: 300px,
+  12: 140px
+);
+
+@each $name, $value in $schizo-widths {
+  .schizoSympt .item#{$name} {
+    min-width: $value;
+  }
+}
+
+$schizo-zindex: (
+  1: 2,
+  2: 5,
+  3: 8,
+  4: 1,
+  5: 3,
+  6: 6,
+  7: 7,
+  8: 4,
+  9: 10,
+  10: 9,
+  11: 12,
+  12: 11
+);
+
+@each $name, $value in $schizo-zindex {
+  .schizoSympt .item#{$name} {
+    z-index: $value;
+  }
+}
+
+@media screen and(max-width: 900px) {
+  .symptoms {
+    flex-wrap: wrap;
+    .item {
+      margin: auto;
     }
   }
 
-  $widths:(
-    1:400px,
-    2:700px,
-    3:550px,
-    4:350px,
-    5:300px,
-    6:310px,
-    7:250px,
-    8:470px,
-    9:690px,
-    10:710px,
-    11:520px,
-    12:280px
-  );
-
+  main {
+    display: none;
+  }
   @each $name, $value in $widths {
     .item#{$name} {
-      min-width: $value;
+      min-width: calc(#{$value}/ 2);
     }
   }
-
-  $bg-image: (
-    1:url("../img/paranoia.jpg"),
-    2:url("../img/t9_oob.jpg"),
-    3:url("../img/senses.jpg"),
-    4:url("../img/erotica.jpg"),
-    5:url("../img/selfharm.jpg"),
-    6:url("../img/t9_oob.jpg"),
-    7:url("../img/senses.jpg"),
-    8:url("../img/erotica.jpg"),
-    9:url("../img/paranoia.jpg"),
-    10:url("../img/selfharm.jpg"),
-    11:url("../img/t9_oob.jpg"),
-    12:url("../img/test.jpg"),
-  );
-
-  @each $name, $value in $bg-image {
-    .item#{$name} {
-      background-image: $value;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      
-    }
-  }
-
-  $left-margins: (
-    1: 0px,
-    2: 500px,
-    3: -160px,
-    4: -230px,
-    5: -30px,
-    6: -100px,
-    7: -150px,
-    8: -130px,
-    9: -290px,
-    10: -210px,
-    11: -230px,
-    12: -110px,
-  );
-
-  @each $name, $value in $left-margins {
-    .item#{$name} {
-      margin-left: $value;
-    }
-  }
-  $top-margins: (
-    1: -130px,
-    2: -170px,
-    3: 300px,
-    4: -250px,
-    5: -150px,
-    6: 120px,
-    7: 320px,
-    8: -200px,
-    9: 400px,
-    10: -700px,
-    11: -50px,
-    12: -300px
-  );
-
-  @each $name, $value in $top-margins {
-    .item#{$name} {
-      margin-top: $value;
-    }
-  }
-
-  $schizo-heights:(
-  1:200px,
-  2:300px,
-  3:120px,
-  4:150px,
-  5:350px,
-  6:370px,
-  7:280px,
-  8:340px,
-  9:280px,
-  10:150px,
-  11:300px,
-  12:140px
-  );
-
-  @each $name, $value in $schizo-heights {
-    .schizoSympt .item#{$name} {
-      min-height: $value;
-    }
-  }
-
-$schizo-widths:(
-  1:200px,
-  2:300px,
-  3:120px,
-  4:150px,
-  5:350px,
-  6:370px,
-  7:280px,
-  8:340px,
-  9:280px,
-  10:150px,
-  11:300px,
-  12:140px
-  );
-
-  @each $name, $value in $schizo-widths {
-    .schizoSympt .item#{$name} {
-      min-width: $value;
-    }
-  }
-
-$schizo-zindex:(
-  1:2,
-  2:5,
-  3:8,
-  4:1,
-  5:3,
-  6:6,
-  7:7,
-  8:4,
-  9:10,
-  10:9,
-  11:12,
-  12:11
-  );
-
-  @each $name, $value in $schizo-zindex {
-    .schizoSympt .item#{$name} {
-      z-index: $value;
-    }
-  }
-
-  @media screen and(max-width: 900px) {
-    .symptoms {
-      flex-wrap: wrap;
-      .item {
-        margin: auto;
-      }
-    }
-    #sideways-nav {
-      display: none;
-    }
-    @each $name, $value in $widths {
-      .item#{$name} {
-        min-width: calc(#{$value}/2);
-      }
-    }
-  }
+}

@@ -1,8 +1,6 @@
-document.querySelectorAll("nav a").forEach(
-  function(e) {
-  e.addEventListener('mouseover', 
-  function() {
-    switch(e.innerHTML) {
+document.querySelectorAll("nav a").forEach(e => {
+  e.addEventListener('mouseover', () => {
+    switch(e.textContent) {
       case "Schizotypal":
         document.querySelector('.symptoms').classList.add('schizoSympt');
       break;
@@ -13,8 +11,8 @@ document.querySelectorAll("nav a").forEach(
     }
   })
 
-  e.addEventListener('mouseout', function(){
-    switch(e.innerHTML) {
+  e.addEventListener('mouseout', () => {
+    switch(e.textContent) {
       case "Schizotypal":
         document.querySelector('.symptoms').classList.remove('schizoSympt');
       break;

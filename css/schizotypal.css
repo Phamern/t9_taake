@@ -49,11 +49,8 @@ footer {
   position: absolute;
   top: 90vh;
 }
-footer #backbutton {
-  font-size: 1rem;
-  color: white;
-  font-family: "josefin-slab", monospace;
-  text-decoration: none;
+footer img {
+  width: 30px;
 }
 
 @media all and (min-width: 900px) {
@@ -75,8 +72,7 @@ footer #backbutton {
     padding: 30px;
   }
   header .logo {
-    width: 50px;
-    text-align: center;
+    display: none;
   }
 
   main #symptoms {
@@ -88,6 +84,15 @@ footer #backbutton {
   main #symptoms .sympt {
     transition: none;
     margin-top: 0;
+  }
+
+  footer {
+    position: absolute;
+    top: 5vh;
+    left: 30px;
+  }
+  footer img {
+    width: 20px;
   }
 
   .sympt1 {

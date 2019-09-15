@@ -54,11 +54,8 @@ main {
 footer {
   position: absolute;
   top: 90vh;
-  #backbutton {
-    font-size: 1rem;
-    color: white;
-    font-family: $default-h1-font-family;
-    text-decoration: none;
+  img {
+    width: 30px;
   }
 }
 
@@ -80,8 +77,7 @@ footer {
     justify-content: center;
     padding: 30px;
     .logo {
-      width: 50px;
-      text-align: center;
+     display: none;
     }
   }
   main {
@@ -94,6 +90,15 @@ footer {
         transition: none;
         margin-top: 0;
       }
+    }
+  }
+
+  footer {
+    position: absolute;
+    top: 5vh;
+    left: 30px;
+    img {
+      width: 20px;
     }
   }
 
@@ -139,6 +144,7 @@ $widths: (
     width: $value;
   }
 }
+
 $heights: (
   1: 280px,
   2: 280px,
