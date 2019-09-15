@@ -77,13 +77,12 @@ main {
     overflow: hidden;
     font-family: $default-font-family-p;
     color: white;
-    //margin-left: 350px;
     .item {
       display: flex;
       justify-content: center;
       align-items: center;
       transition: 1s ease-in-out ;
-      //opacity: 0.8;
+      box-shadow: 10px 10px 8px 10px #888888;
       cursor: pointer
     }
     .item:hover {
@@ -161,6 +160,7 @@ $heights:(
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      
     }
   }
 
