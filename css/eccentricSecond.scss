@@ -64,7 +64,7 @@ main {
     .q1 {
       grid-column: 2/5;
       grid-row: 15/16;
-      color: #DD64DD;
+      color: #dd64dd;
     }
     .answer1 {
       grid-column: 2/5;
@@ -90,7 +90,7 @@ main {
     .q2 {
       grid-column: 2/4;
       grid-row: 29/29;
-      color: #70D300;
+      color: #70d300;
     }
     .answer2 {
       grid-column: 2/5;
@@ -108,7 +108,7 @@ main {
     .q3 {
       grid-column: 6/8;
       grid-row: 32/33;
-      color: #70D300;
+      color: #70d300;
       text-align: right;
     }
     .answer3 {
@@ -120,9 +120,38 @@ main {
     }
     .image7 {
       grid-column: 2/5;
-      grid-row: 32/end;
+      grid-row: 32 / end;
       background-image: url("../img/image3_pol.jpg");
       margin-top: 50px;
+    }
+  }
+}
+
+@media only screen and(max-width: 600px) {
+  main {
+    #section-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(20, minmax(min-content, max-content));
+      max-width: 100vw;
+      height: auto;
+      grid-gap: 30px;
+      padding: 50px;
+      align-items: end;
+
+      .images {
+        min-height: 30vh !important;
+      }
+
+      * {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        padding: 13px;
+        text-align: left !important;
+      }
+      .name {
+        font-size: 3rem;
+      }
     }
   }
 }

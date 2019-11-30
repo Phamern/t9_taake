@@ -91,7 +91,7 @@ main {
 
 //Oppfører seg som et array
 $heights: (
-  1: 100px,
+  1: 150px,
   2: 200px,
   3: 150px,
   4: 200px,
@@ -100,7 +100,7 @@ $heights: (
   7: 260px,
   8: 190px,
   9: 250px,
-  10: 240px,
+  10: 340px,
   11: 300px,
   12: 310px
 );
@@ -124,7 +124,7 @@ $widths: (
   8: 470px,
   9: 390px,
   10: 710px,
-  11: 520px,
+  11: 320px,
   12: 280px
 );
 
@@ -136,17 +136,17 @@ $widths: (
 
 $bg-image: (
   1: url("../img/paranoia.jpg"),
-  2: url("../img/t9_oob.jpg"),
-  3: url("../img/senses.jpg"),
-  4: url("../img/erotica.jpg"),
+  2: url("../img/senses.jpg"),
+  3: url("../img/erotica.jpg"),
+  4: url("../img/paranoia.jpg"),
   5: url("../img/selfharm.jpg"),
   6: url("../img/t9_oob.jpg"),
   7: url("../img/senses.jpg"),
   8: url("../img/erotica.jpg"),
   9: url("../img/paranoia.jpg"),
   10: url("../img/selfharm.jpg"),
-  11: url("../img/t9_oob.jpg"),
-  12: url("../img/test.jpg")
+  11: url("../img/test.jpg"),
+  12: url("../img/t9_oob.jpg")
 );
 
 @each $name, $value in $bg-image {
@@ -167,7 +167,7 @@ $left-margins: (
   6: -100px,
   7: -150px,
   8: -130px,
-  9: -790px,
+  9: -390px,
   10: -210px,
   11: -230px,
   12: -110px
@@ -209,7 +209,7 @@ $schizo-heights: (
   7: 280px,
   8: 340px,
   9: 280px,
-  10: 150px,
+  10: 350px,
   11: 300px,
   12: 140px
 );
