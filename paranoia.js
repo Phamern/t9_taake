@@ -1,55 +1,63 @@
 let video;
-let secondVid;
 let width = 640;
 let height = 520;
-let button;
 
-let snapshots = [];
+let snapCount = 0;
+let snapInterval;
 
 function setup() {
-  createCanvas(width, height);
-  //background(255, 0, 105);
-  video = createCapture(VIDEO);
-  secondVid = createCapture(VIDEO);
-  video.size(width, height);
-  secondVid.size(width, height);
-  video.hide();
-  //loadPixels();
-  //button = createButton('snap');
-  //button.mousePressed(takesnap);
+
+  // load images
+  let pic1 = localStorage.getItem('pic0');
+  if(pic1){
+    showSnap(pic1);
+  }
+  let pic2 = localStorage.getItem('pic1');
+  if(pic2){
+    showSnap(pic2);
+  }
+  let pic3 = localStorage.getItem('pic2');
+  if(pic3){
+    showSnap(pic3);
+  }
+  let pic4 = localStorage.getItem('pic3');
+  if(pic4){
+    showSnap(pic4);
+  }
+
+  if(!pic1) {
+    // capture images
+      createCanvas(width, height);
+      video = createCapture(VIDEO, function(event) {
+      snapInterval = setInterval(takesnap, 1000);
+    });
+    video.size(width, height);
+    video.hide();
+  }
 };
 
 
 function takesnap() {
-  video.loadPixels();
-  if(snapshots.length < 5) {
-   snapshots.push(video.get());
+  if(snapCount < 5) {
+
+    let snap = video.get();
+    var myImage = snap.canvas.toDataURL("image/png"); 
+    localStorage.setItem('pic'+ snapCount, myImage);
+
+    //showSnap(myImage);
+  } else {
+    clearInterval(snapInterval);
+    video.remove();
   }
-  secondVid.loadPixels();
-  if(snapshots.length < 5) {
-   snapshots.push(secondVid.get());
-  }
-  //save();
-  // tint(255, 0, 105);
-  // image(video, 0, 0);
+  snapCount++;
 };
 
-function draw() {
-  for(let i = 0; i < snapshots.length; i++) {
-    //tint(255, 50);
-    image(snapshots[i], 0, 0);
-    if(snapshots.length > 5) {
-      break;
-    };
-  }
-};
+function showSnap(myImage) {
+  // create image element
+  let images = document.querySelector(".images");
+  let image = document.createElement('img');
+  image.src = myImage;
 
-setInterval(takesnap, 1000);
-
-let img1 = document.querySelector(".img1");
-let img2 = document.querySelector(".img2");
-
-img1.innerHTML = `<img src="${snapshots[4]}"></img>`;
-
-
-console.log(snapshots);
+  // append image to page
+  images.appendChild(image);
+}
