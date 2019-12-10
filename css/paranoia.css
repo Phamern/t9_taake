@@ -1,0 +1,67 @@
+@import url("https://use.typekit.net/hct4vcx.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
+.title {
+  display: flex;
+  position: fixed;
+  z-index: 15;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50vw;
+  height: 100vh;
+}
+.title h1 {
+  color: red;
+  font-size: 8rem;
+  position: fixed;
+  font-family: "josefin-slab", monospace;
+}
+
+.images {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 400px);
+  overflow: auto;
+  grid-gap: 300px;
+  align-items: center;
+}
+.images img:nth-child(1) {
+  padding: 20px;
+  filter: saturate(3) opacity(5%);
+  margin-top: 50px;
+}
+.images img:nth-child(2) {
+  padding: 20px;
+  filter: saturate(3) opacity(10%);
+}
+.images img:nth-child(3) {
+  padding: 20px;
+  filter: saturate(3) opacity(15%);
+  margin-bottom: 150px;
+}
+.images img:nth-child(4) {
+  padding: 20px;
+  filter: saturate(3) opacity(100%);
+}
+.images img:hover {
+  transform: scale(1.5);
+}
+
+.backBtn {
+  width: 30px;
+  height: auto;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+/*# sourceMappingURL=paranoia.css.map */
