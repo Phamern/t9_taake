@@ -19,8 +19,8 @@ body {
   height: 100vh;
 }
 .title h1 {
-  color: red;
-  font-size: 8rem;
+  color: #c90711;
+  font-size: 5rem;
   position: fixed;
   font-family: "josefin-slab", monospace;
 }
@@ -49,7 +49,7 @@ body {
 }
 .images img:nth-child(4) {
   padding: 20px;
-  filter: saturate(3) opacity(100%);
+  filter: saturate(3) opacity(30%);
 }
 .images img:hover {
   transform: scale(1.5);

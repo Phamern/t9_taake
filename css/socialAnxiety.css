@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/hct4vcx.css");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,18 +6,63 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
+  overflow: hidden;
+  animation: scale 60s infinite;
+  background-color: #0a0a0a;
 }
 
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(5);
+  }
+}
 video {
   position: absolute;
   z-index: -1;
 }
 
-h1 {
-  font-size: 5rem;
-  position: absolute;
-  z-index: 3;
+audio {
+  display: none;
+}
+
+a {
+  font-family: "josefin-sans", sans-serif;
+  font-weight: 900;
+  animation: fadein 1.5s infinite;
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.5);
+    font-size: 1rem;
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1);
+    font-size: 5rem;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+}
+button {
+  position: fixed;
 }
 
 /*# sourceMappingURL=socialAnxiety.css.map */

@@ -7,69 +7,24 @@
     <title></title>
     <link rel="stylesheet" href="./css/socialAnxiety.css" />
   </head>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    body {
-      transition: 60s;
-    }
-    body:hover {
-      transform: scale(5);
-   }
-
-    audio {
-      display: none;
-    }
-
-    a {
-      font-size: 2rem;
-      font-family: "Futura";
-      animation: fadein 1.5s infinite;
-      text-decoration: none;
-      color: black;
-    }
-
-    @keyframes fadein {
-      0% {
-         opacity: 0.5;
-         transform: scale(0.5);
-      }
-
-      25% {
-         opacity: 1;
-         transform: scale(1);
-      }
-      50% {
-         opacity: 1;
-         transform: scale(1);
-      }
-
-      100% {
-         opacity: 0.5;
-         transform: scale(0.5);
-      }
-   }
-
-    button {
-      position: fixed;
-    }
-  </style>
   <body>
-    <video width="100%" autoplay loop>
-      <source src="./video/People - 3606.mp4" type="video/mp4" />
+    <video class="myVideo" width="100%" playsinline autoplay muted loop>
+      <source src="./video/people.mp4" type="video/mp4" />
     </video>
-    <audio
-      src="./audio/CrowdLaughing-SoundBible.com-156484001.mp3"
-      controls
-      autoplay
-      loop
-    ></audio>
+    <audio class="myAudio" controls autoplay loop>
+      <source
+        src="./audio/CrowdLaughing-SoundBible.com-156484001.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
     <a href="schizotypal.html">GET OUT</a>
-    <script src="./index.js"></script>
+    <script>
+    let autoAudio = document.querySelector(".myAudio");
+
+    window.addEventListener("mousemove", playAudio);
+    function playAudio() {
+      autoAudio.play();
+    }
+    </script>
   </body>
 </html>
