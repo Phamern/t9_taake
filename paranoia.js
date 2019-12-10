@@ -5,6 +5,8 @@ let height = 520;
 let snapCount = 0;
 let snapInterval;
 
+let clearLocal = document.querySelector(".backBtn");
+
 function setup() {
 
   // load images
@@ -61,3 +63,7 @@ function showSnap(myImage) {
   // append image to page
   images.appendChild(image);
 }
+
+// clearLocal.addEventListener("click", () => {
+//   window.localStorage.clear();
+// })

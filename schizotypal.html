@@ -22,7 +22,16 @@
     </section>
   </main>
   <footer>
-      <a id="backbutton" href="index.html"><img src="./img/back_button.png" alt=""></a>
+      <a id="backButton" href="index.html"><img src="./img/back_button.png" alt=""></a>
   </footer>
+
+  <script>
+
+    let clearLocal = document.querySelector("#backButton");
+    clearLocal.addEventListener("click", () => {
+      window.localStorage.clear();
+    });
+
+  </script>
 </body>
 </html>

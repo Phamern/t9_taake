@@ -28,6 +28,7 @@ document.querySelectorAll("nav a").forEach(e => {
 let video;
 let width = 640;
 let height = 520;
+let snapCount = 0;
 
 function setup() {
 
@@ -75,17 +76,5 @@ function takesnap() {
   }
   snapCount++;
 };
-
-function showSnap(myImage) {
-  // create image element
-  let images = document.querySelector(".images");
-  let image = document.createElement('img');
-  image.src = myImage;
-
-  // append image to page
-  images.appendChild(image);
-}
-
-let snapCount = 0;
 let snapInterval;
 
