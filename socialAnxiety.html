@@ -8,23 +8,35 @@
     <link rel="stylesheet" href="./css/socialAnxiety.css" />
   </head>
   <body>
-    <video class="myVideo" width="100%" playsinline autoplay muted loop>
-      <source src="./video/people.mp4" type="video/mp4" />
-    </video>
-    <audio class="myAudio" controls autoplay loop>
-      <source
-        src="./audio/CrowdLaughing-SoundBible.com-156484001.mp3"
-        type="audio/mpeg"
-      />
-    </audio>
-    <a href="schizotypal.html">GET OUT</a>
-    <script>
-    let autoAudio = document.querySelector(".myAudio");
+    <div id="enter">
+      <h1 id="textEnter">Enter</h1> 
+    </div>
 
-    window.addEventListener("mousemove", playAudio);
-    function playAudio() {
-      autoAudio.play();
-    }
+    <main>
+      <video class="myVideo" width="100%" playsinline autoplay muted loop>
+        <source src="./video/people.mp4" type="video/mp4" />
+      </video>
+      <audio class="myAudio" controls autoplay loop>
+        <source
+          src="./audio/CrowdLaughing-SoundBible.com-156484001.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <a href="schizotypal.html">GET OUT</a>
+    </main>
+    <script>
+      let autoAudio = document.querySelector(".myAudio");
+
+      window.addEventListener("click", playAudio);
+      function playAudio() {
+        autoAudio.play();
+      }
+      const enterPage = document.querySelector("#enter");
+      const enterText = document.querySelector("#textEnter");
+      enterPage.addEventListener("click", () => {
+        enterText.classList.add("hidden");
+        enterPage.classList.add("hidden");
+      });
     </script>
   </body>
 </html>

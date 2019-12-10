@@ -1,6 +1,7 @@
 @import url("https://use.typekit.net/hct4vcx.css");
 
 $default-h1-font-family: "josefin-sans", sans-serif;
+$default-second: "josefin-slab", sans-serif;
 
 * {
   box-sizing: border-box;
@@ -9,6 +10,10 @@ $default-h1-font-family: "josefin-sans", sans-serif;
 }
 
 body {
+  overflow: hidden;
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +21,7 @@ body {
   margin: 0;
   overflow: hidden;
   animation: scale 60s infinite;
-  background-color: #0a0a0a
+  background-color: #0a0a0a;
 }
 
 @keyframes scale {
@@ -48,27 +53,57 @@ a {
 
 @keyframes fadein {
   0% {
-     opacity: 0.5;
-     transform: scale(0.5);
-     font-size: 1rem;
+    opacity: 0.5;
+    transform: scale(0.5);
+    font-size: 1rem;
   }
 
   25% {
-     opacity: 1;
-     transform: scale(1);
-     font-size: 5rem;
+    opacity: 1;
+    transform: scale(1);
+    font-size: 5rem;
   }
   50% {
-     opacity: 1;
-     transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
   }
 
   100% {
-     opacity: 0.5;
-     transform: scale(0.5);
+    opacity: 0.5;
+    transform: scale(0.5);
   }
 }
 
 button {
   position: fixed;
+}
+
+#enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: fixed;
+  flex-direction: column;
+  overflow: hidden;
+  #textEnter {
+    color: white;
+    z-index: 5;
+    margin: auto 0;
+    font-family: $default-second;
+    font-weight: 100;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    cursor: pointer;
+  }
+}
+
+.hidden {
+  display: none !important;
 }
