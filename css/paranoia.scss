@@ -10,6 +10,16 @@ $default-h1-font-family: "josefin-slab", monospace;
 body {
   background-color: #0f0f0f;
 }
+
+.backBtn {
+  width: 30px;
+  height: auto;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 10;
+}
+
 .title {
   display: flex;
   position: fixed;
@@ -27,7 +37,7 @@ body {
 }
 
 .images {
-  height: 100vh; 
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(5, 400px);
   overflow: auto;
@@ -35,32 +45,23 @@ body {
   align-items: center;
   img:nth-child(1) {
     padding: 20px;
-    filter:saturate(3) opacity(5%);
+    filter: saturate(3) opacity(5%);
     margin-top: 50px;
   }
   img:nth-child(2) {
     padding: 20px;
-    filter:saturate(3) opacity(10%);
+    filter: saturate(3) opacity(10%);
   }
   img:nth-child(3) {
     padding: 20px;
-    filter:saturate(3) opacity(15%);
+    filter: saturate(3) opacity(15%);
     margin-bottom: 150px;
   }
   img:nth-child(4) {
     padding: 20px;
-    filter:saturate(3) opacity(30%);
+    filter: saturate(3) opacity(30%);
   }
   img:hover {
     transform: scale(1.5);
   }
-}
-
-.backBtn {
-  width: 30px;
-  height: auto;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 10;
 }

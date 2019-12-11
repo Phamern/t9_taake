@@ -62,8 +62,4 @@ function showSnap(myImage) {
 
   // append image to page
   images.appendChild(image);
-}
-
-// clearLocal.addEventListener("click", () => {
-//   window.localStorage.clear();
-// })
+};

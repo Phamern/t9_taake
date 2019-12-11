@@ -7,8 +7,8 @@
 
 body {
   background-color: #0a0a0a;
-  padding-left: 60px;
-  padding-top: 60px;
+  margin-left: 60px;
+  margin-top: 60px;
 }
 
 .logo {
@@ -19,7 +19,7 @@ body {
 aside {
   position: fixed;
   height: 100vh;
-  width: 250px;
+  width: 15vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,7 +59,7 @@ aside a:hover {
 }
 
 main {
-  margin-left: calc(250px + 50px);
+  margin-left: calc(15vw + 50px);
 }
 main section {
   display: flex;
@@ -502,7 +502,15 @@ main section .item:hover {
   z-index: 11;
 }
 
+.p5Canvas {
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
+  body {
+    overflow: hidden;
+  }
+
   .symptoms {
     flex-wrap: wrap;
   }

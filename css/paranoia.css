@@ -9,6 +9,15 @@ body {
   background-color: #0f0f0f;
 }
 
+.backBtn {
+  width: 30px;
+  height: auto;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 10;
+}
+
 .title {
   display: flex;
   position: fixed;
@@ -53,15 +62,6 @@ body {
 }
 .images img:hover {
   transform: scale(1.5);
-}
-
-.backBtn {
-  width: 30px;
-  height: auto;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 10;
 }
 
 /*# sourceMappingURL=paranoia.css.map */

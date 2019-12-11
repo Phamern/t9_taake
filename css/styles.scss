@@ -1,8 +1,7 @@
 @import url("https://use.typekit.net/hct4vcx.css");
 
 $default-font-family-p: "josefin-slab", serif;
-$default-titles-font: "Base-mono-narrow", monospace;
-$side-width: 250px;
+$side-width: 15vw;
 
 * {
   box-sizing: border-box;
@@ -12,8 +11,8 @@ $side-width: 250px;
 
 body {
   background-color: #0a0a0a;
-  padding-left: 60px;
-  padding-top: 60px;
+  margin-left: 60px;
+  margin-top: 60px;
 }
 
 .logo {
@@ -262,7 +261,14 @@ $schizo-zindex: (
   }
 }
 
+.p5Canvas {
+  display: none;
+}
+
 @media screen and(max-width: 900px) {
+  body {
+    overflow: hidden;
+  }
   .symptoms {
     flex-wrap: wrap;
     .item {
@@ -273,6 +279,7 @@ $schizo-zindex: (
   main {
     display: none;
   }
+
   @each $name, $value in $widths {
     .item#{$name} {
       min-width: calc(#{$value}/ 2);
